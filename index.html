@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styel.css">
+</head>
+<body>
+  
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAKER ELITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">SNEAKER<span>ELITE</span></a>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#shop">SHOP</a>
+        <a href="#new">NEW</a>
+        <a href="#popular">POPULAR</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+    <button class="cart" onclick="showCart()">
+        🛒 CART (<span id="count">0</span>)
+    </button>
+</header>
+
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <p class="tag">STEP INTO THE FUTURE</p>
+        <h1>UNLEASH<br>YOUR <span>POWER.</span></h1>
+        <p>Discover your next favorite sneakers.
+           Style, speed and comfort in every step.</p>
+        <a href="#shop" class="btn">SHOP NOW →</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+         alt="Red sports sneaker">
+</section>
+
+<section class="section" id="shop">
+    <p class="tag">OUR COLLECTION</p>
+    <h2>SHOP <span>SNEAKERS</span></h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Red sneakers">
+            <h3>Red Thunder</h3>
+            <p>$120</p>
+            <button onclick="addToCart('Red Thunder',120)">ADD TO CART +</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80&sat=-100" alt="Sport sneakers">
+            <h3>Street Runner</h3>
+            <p>$95</p>
+            <button onclick="addToCart('Street Runner',95)">ADD TO CART +</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=600&q=80" alt="Fashion sneakers">
+            <h3>Urban Classic</h3>
+            <p>$110</p>
+            <button onclick="addToCart('Urban Classic',110)">ADD TO CART +</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="new-section" id="new">
+    <div>
+        <p class="tag">JUST DROPPED</p>
+        <h2>FRESH KICKS.<br><span>NEW ENERGY.</span></h2>
+        <p>Meet the latest collection designed for those who never stand still.</p>
+        <a href="#shop" class="btn">EXPLORE NOW →</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=850&q=85" alt="Latest sneaker collection">
+</section>
+
+
+<section class="section popular" id="popular">
+    <p class="tag">TRENDING NOW</p>
+    <h2>MOST <span>POPULAR</span></h2>
+    <div class="popular-grid">
+        <div class="popular-card">
+            <span>01 / BEST SELLER</span>
+            <h3>Street Style</h3>
+            <p>Designed to stand out.</p>
+        </div>
+        <div class="popular-card">
+            <span>02 / TOP PICK</span>
+            <h3>Sport Pro</h3>
+            <p>Made for every move.</p>
+        </div>
+        <div class="popular-card">
+            <span>03 / TRENDING</span>
+            <h3>Urban Flex</h3>
+            <p>Everyday comfort, bold style.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="about" id="about">
+    <div class="about-mark">SE<span>.</span></div>
+    <div>
+        <p class="tag">WHO WE ARE</p>
+        <h2>MORE THAN<br>JUST <span>SNEAKERS.</span></h2>
+        <p>SNEAKER ELITE is all about confidence, individuality
+           and street culture. Find your style and make every
+           step count.</p>
+    </div>
+</section>
+
+
+<section class="section contact" id="contact">
+    <p class="tag">GET IN TOUCH</p>
+    <h2>LET'S <span>TALK.</span></h2>
+    <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Your message..." required></textarea>
+        <button class="btn" type="submit">SEND MESSAGE →</button>
+    </form>
+    <p id="message"></p>
+</section>
+
+<footer>
+    <a href="#home" class="logo">SNEAKER<span>ELITE</span></a>
+    <p>© 2026 SNEAKER ELITE. ALL RIGHTS RESERVED.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
